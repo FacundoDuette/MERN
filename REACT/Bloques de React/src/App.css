@@ -1,0 +1,44 @@
+.box-gris{
+    width: 90%;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+.box-amarillo{
+  height: 150px;
+  background-color: #ffcc00;
+  margin-bottom: 10px;
+  flex: 0 0 100%;
+}
+.box-lila{
+  flex: 1 1 auto;
+    width: 70%;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    background-color: deeppink;
+
+}
+.box-celeste{
+  flex: 1 1 auto;
+  height: 380px;
+    width: 20%;
+  background-color: lightskyblue;
+}
+.box-azul{
+  height: 200px;
+    width: 30%;
+    background-color: mediumblue;
+    flex: 1 1 auto;
+}
+.box-verde{
+  height: 120px;
+  width: 100%;
+  background-color: #33cc33;
+  flex: 1 0 100%;
+}

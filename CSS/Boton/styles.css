@@ -1,0 +1,22 @@
+#cuenta{
+    color: white;
+    background-color:dodgerblue;
+    border: 1px solid dodgerblue;
+    padding: 5px;
+    box-shadow: 15px 10px 16px 0px #B5B5B5;
+}
+#mas{
+    background-color: orange;
+    padding: 10px;
+    width: 40px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 100%;
+}
+#buscar{
+    border-radius: 30px;
+    padding: 10px 20px;
+}

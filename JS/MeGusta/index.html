@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Feed</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Network</h1>
+    </header>
+    <main>
+        <aside class="profile">
+            <div class="profile-card">
+                <img src="robert.png" alt="Profile Image">
+                <p>Adrien Desplatz</p>
+            </div>
+        </aside>
+        <section class="feed">
+            <h2>Your Feed</h2>
+            <div class="post">
+                <h3>Linn O.</h3>
+                <p>Acabo de configurar este nuevo bot de Discord, cuéntenme que opinan ustedes. <a href="#">link</a></p>
+                <div class="like-section">
+                    <span id="like1">0 like(s)</span>
+                    <button onclick="addlike('like1')">Like</button>
+                </div>
+            </div>
+            <div class="post">
+                <h3>Lina K.</h3>
+                <p>Acabo de terminar este <a href="#">nuevo comic</a>, denle un vistazo.</p>
+                <div class="like-section">
+                    <span id="like2">0 like(s)</span>
+                    <button onclick="addlike('like2')">Like</button>
+                </div>
+            </div>
+            <div class="post">
+                <h3>Mateo H.</h3>
+                <p>No puedo dejar de escuchar este <a href="#">album</a>. ¿A quién más le gusta?</p>
+                <div class="like-section">
+                    <span id="like3">0 like(s)</span>
+                    <button onclick="addlike('like3')">Like</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
