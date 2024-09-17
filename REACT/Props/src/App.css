@@ -1,0 +1,47 @@
+/* Estilo del contenedor principal que contiene las tarjetas */
+.tarjetas-contenedor {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo del nombre del producto */
+.tarjeta h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilo del precio */
+.tarjeta p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Estilo especial para el estado de disponibilidad */
+.stock {
+  color: green;
+  font-weight: bold;
+}
+
+.no-stock {
+  color: red;
+  font-weight: bold;
+}
