@@ -1,0 +1,50 @@
+
+main{
+  display: flex;
+}
+form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+aside{
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+label{
+  margin-top: 10px;
+  font-size: 18px;
+}
+input{
+  background-color: gainsboro;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 220px;
+}
+button{
+  background-color: #017BFE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.heroe-card{
+  background-color: #007BFF;
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+}
