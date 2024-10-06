@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    gap: 15px;
+    color: white;
+    align-items: center;
+    background-color: #2C2C2C;
+    justify-content: center;
+}
+.select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+.input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
