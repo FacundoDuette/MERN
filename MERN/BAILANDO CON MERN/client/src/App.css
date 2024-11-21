@@ -1,0 +1,275 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Mantiene altura completa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh; /* Que ocupe toda la ventana */
+  align-items: center;
+}
+
+.container {
+  width: 90%; /* Ajuste para pantallas más pequeñas */
+  max-width: 1000px; /* Ancho máximo */
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor del formulario */
+.add-song-form, .add-playlist-form {
+  margin: 2rem auto;
+  max-width: 400px; /* Asegura un ancho consistente */
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Título del formulario */
+.add-song-form h1, .add-playlist-form h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Etiquetas de los campos */
+.add-song-form label, .add-playlist-form label {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Campos de entrada */
+.add-song-form input, .add-playlist-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Botón del formulario */
+.add-song-form button, .add-playlist-form button {
+  background-color: #007bff; /* Azul profesional */
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-song-form button:hover, .add-playlist-form button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Alinear texto dentro del formulario */
+.add-song-form input::placeholder, .add-playlist-form input::placeholder {
+  color: #aaa; /* Texto placeholder más tenue */
+  font-style: italic;
+}
+
+/* Ajustes adicionales para diseño */
+.add-song-form input:focus, .add-playlist-form input:focus {
+  border-color: #007bff; /* Cambia el borde al enfocarse */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resalta el campo */
+}
+
+/* Estilo para Playlists */
+.playlists {
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.playlists h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.playlists input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.playlists ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlists li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+.playlists a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.playlists a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para la página Home */
+.home {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.home h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.home p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.add-playlist-form {
+  margin: 2rem auto;
+  max-width: 500px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.add-playlist-form h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.add-playlist-form label {
+  font-weight: bold;
+  color: #444;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.add-playlist-form input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-playlist-form h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.add-playlist-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.add-playlist-form li {
+  margin: 0.5rem 0;
+}
+
+.add-playlist-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.add-playlist-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-playlist-form button:hover {
+  background-color: #218838;
+}
+.songs {
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.songs h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.songs input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.songs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.songs li {
+  margin: 0.8rem 0;
+}
+
+.songs a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.songs a:hover {
+  text-decoration: underline;
+}
