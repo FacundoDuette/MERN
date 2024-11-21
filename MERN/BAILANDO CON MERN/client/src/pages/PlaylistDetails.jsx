@@ -3,7 +3,7 @@ import { getAllPlaylists, addSongToPlaylist } from "../api/playlistsApi";
 import { getAllSongs } from "../api/songsApi";
 
 const PlaylistDetails = ({ match }) => {
-  const { id } = match.params; // Obtener el ID de la playlist de la URL
+  const { id } = match.params; 
   const [playlist, setPlaylist] = useState(null);
   const [songs, setSongs] = useState([]);
   const [selectedSong, setSelectedSong] = useState("");
